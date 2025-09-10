@@ -1,0 +1,46 @@
+[project]
+name = "conflux-alerts"
+version = "0.1.0"
+description = "Open Source Stream Alert Manager and Chat Bot"
+authors = [
+    {name = "unfw@unfw.live"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "pyside6 (>=6.9.2,<7.0.0)",
+    "qasync (>=0.28.0,<0.29.0)",
+    "requests-oauthlib (>=2.0.0,<3.0.0)",
+    "google-auth (>=2.40.3,<3.0.0)",
+    "google-auth-oauthlib (>=1.2.2,<2.0.0)",
+    "google-api-python-client (>=2.181.0,<3.0.0)",
+    "twitchapi (>=4.5.0,<5.0.0)",
+    "aiohttp (>=3.12.15,<4.0.0)",
+    "websockets (>=15.0.1,<16.0.0)",
+    "asyncio (>=4.0.0,<5.0.0)",
+    "jinja2 (>=3.1.6,<4.0.0)",
+    "pydantic (>=2.11.7,<3.0.0)",
+    "pyyaml (>=6.0.2,<7.0.0)",
+    "sqlalchemy (>=2.0.43,<3.0.0)",
+    "cryptography (>=45.0.7,<46.0.0)",
+    "watchdog (>=6.0.0,<7.0.0)",
+    "plyer (>=2.1.0,<3.0.0)",
+    "win10toast (>=0.9,<0.10)",
+    "pyinstaller (>=6.15.0,<7.0.0)",
+    "briefcase (>=0.3.25,<0.4.0)",
+    "tufup (>=0.9.0,<0.10.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.2"
+pytest-qt = "^4.5.0"
+mypy = "^1.17.1"
+flake8 = "^7.3.0"
+black = "^25.1.0"
+tax = "^1.0.0"
+
